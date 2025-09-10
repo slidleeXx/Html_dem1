@@ -1,29 +1,110 @@
 <!DOCTYPE html> 
 <html>
-<title>Ejercicio Practico</title>
 
-<header>Perfil de Usuario</header>
+<head> 
+    <meta charset="UFT-8" >  <!-- Insercion de Character UNICODE SIMBOLOS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Control vista dispositivos moviles-->
+    <title>Ej Pract Perfil Usuario HTTML 5 </title>
+  
+</head>
 
-<main>
-<h1>  </h1>
+<body>
 
-<p> Bibliografia de Usuario </p>
-    <article>
+    <header> <h1> Perfil de Usuario </h1>
+    </header>
 
-    </article>
+    <main>
+
+        <section>
+            <img src="img\Messsi.png" alt="Imagen de perfil:THE GOAT">
+            <br>
+            <br>
+            <video width="320" height="240" controls autoplay muted>
+            <source src="video/Messsi.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+            </video>
+
+        </section>
+            
+        <article>
+            <h2>Bibliografia</h2>
+            <p> Lionel Andrés Messi Cuccittini (Rosario, 24 de junio de 1987), conocido como Leo Messi, futbolista argentino que juega como delantero o centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS canadoestadounidense. Es también internacional con la selección de Argentina, de la que es capitán.El 10 de Argentina gano todos los posibles premios que un futbolista puede conseguir y considerado el mejor jugador de todos los tiempos. </p>
+        </article>
+   
+
+        <SECTION>
+            <h2>Detalles de Contacto</h2>
+             <table>
+                <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Información </th>
+                </tr>
+                </thead>
+                
+                <tbody>
+                <tr>
+                    <td>Email</td>
+                    <td>lionelmes10@yahoo.com</td>
+                </tr>
+                <tr>
+                    <td>Telefono</td>
+                    <td>+54 9 261 123 4567</td>
+                </tr>
+                <tr>
+                    <td>BusinesEmail</td>
+                    <td>messichambeador@gmail.com</td>
+                </tr>
+                  <tr>
+                    <td>Obra Social</td>
+                    <td>*</td>
+                </tr>
+                </tbody>
+                <tfoot> 
+                    * significa que Lionel no tiene asociada informacion 
+                </tfoot>
+            </table>
+
+        </SECTION>
 
 
-    <h2>Detalles de Contacto </h2>
-    <thead>
-        <thead> Informacion de Contacto</thead>
-        
+        <section>
+            <h2>Actualizar Perfil</h2>
+            <form>
+                <label>Nombre:
+                <input type="text" name="nombre">
+                </label><br><br>
 
+                <label>Correo electrónico:
+                <input type="email" name="correo">
+                </label><br><br>
 
-    </thead>
-</main>
+                <label>Telefono:
+                <input type="number" name="correo">
+                </label><br><br>
+
+                <label>Correo de Negocios:
+                <input type="number" name="correo">
+                </label><br><br>
+
+                <label>Biografía:
+                <textarea name="biografia" rows="10" cols="50"></textarea>
+                </label><br><br>
+
+                <input type="submit" value="Actualizar">
+            </form>
+        </section>        
+                
+    </main>
+
+    
+
+</body>
 
 <footer> 
-    copyright MIT LICENCE @2025 SlidleeXx 
+    copyright MIT LICENCE @2025 SlidleeXx Perfil de Usuario 
 </footer>
+
+
 
 </html>

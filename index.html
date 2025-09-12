@@ -29,7 +29,7 @@
 
                 <h2>Video de Presentacion</h2>
                 <br>
-                <video width="320" height="240" controls autoplay muted>
+                <video width="320" height="240" controls autoplay muted> <!--Controles de video, autoplay: inicia automaticamente, muted: sin sonido-->
                 <source src="video/Messsi.mp4" type="video/mp4">
                 El navegador no soporta el elemento de video.
                 </video>
@@ -106,19 +106,23 @@
             <h2>Actualizar Perfil</h2>
             <form>
                 <label>Nombre:
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" placeholder="Escribe tu nombre" max length="30" required> <!-- max length: maximo caracteres, required: campo obligatorio-->
                 </label><br><br>
 
                 <label>Correo electrónico:
-                <input type="email" name="correo">
+                <input type="email" name="correo" placeholder="Escribe tu correo" required>
                 </label><br><br>
 
                 <label>Telefono:
-                <input type="number" name="telefono">
+                <input type="number" name="telefono" placeholder="Escribe tu telefono" min="10" max="15" required>
                 </label><br><br>
 
                 <label>Correo de Negocios:
-                <input type="number" name="correo busines">
+                <input type="number" name="correo busines" placeholder="Escribe tu correo de negocios">
+                </label><br><br>
+
+                <label>Agendar cita:
+                <input type="date" name="cita">
                 </label><br><br>
 
                 <label>Biografía:

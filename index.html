@@ -131,24 +131,32 @@
 
                 <label>Quires a Lionel en tu equipo ?
                 <input type="checkbox" name="equipo" value="si"> Si:
-                <input type="checkbox" name="equipo" value="SI"> SI:
+                <input type="checkbox" name="equipo" value="no"> SI:
                 </label><br><br>
 
                 <label>Genero:
-                <input type="radio" name="genero" value="masculino" checked> Masculino <!-- checked: seleccion por defecto-->
-                <input type="radio" name="genero" value="femenino"> Femenino
-                <input type="radio" name="genero" value="otro"> Otro        
-
+                <input type="radio" name="genero" value="masculino" checked> Masculino <!-- checked: seleccion por defecto, name: agrupa y 1 selec ,value los distingue , id: identifica-->
+                <input type="radio" name="genero" value="femenino" > Femenino
+                <input type="radio" name="genero" value="otro" > Otro        
+                </label> 
+                <!-- puedo usar mas label/h/texto normal-->
                 
                 <label> Que tan bueno eres jugando al futbol ?:
                 <input type="range" name="rango" min="0" max="10" step="1" value="5"> <!-- step: incremento, value: valor por defecto-->
                 </label><br><br>    
-
-
-                <label>Color Camiseta
-                <input type="color" name="color" value="#ff0000"> <!-- value: color por defecto-->
+                
+                
+                <label>Color Camiseta:
+                <input type="color" name="color" value="black"> <!-- value: color por defecto-->
                 </label>
 
+                <label>Envia tu foto de perfil:
+                <input type="file" name="foto" multiple accept="image/pdf*"> <!-- accept: tipo de archivo/s multiple:mas de un archivo-->
+                </label>
+                <label>Envia tu DNI: 
+                <imput type="file" name="documento" multiple file="image/pdf/word*"> <!-- file: tipo de archivo/s multiple:mas de un archivo--> 
+                </label>
+                
 
                 <input type="submit" value="actualizar"> <!--Boton envio del formulario y actualiza la pagina-->
             </form>

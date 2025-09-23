@@ -106,15 +106,15 @@
             <h2>Actualizar Perfil</h2>
             <form>
                 <label>Nombre:
-                <input type="text" name="nombre" placeholder="Escribe tu nombre" max length="30" required> <!-- max length: maximo caracteres, required: campo obligatorio-->
+                <input type="text" name="nombre" placeholder="Escribe tu nombre" max length="30" minlength="5" required> <!-- max length: maximo caracteres, required: campo obligatorio-->
                 </label><br><br>
 
                 <label>Correo electrónico:
-                <input type="email" name="correo" placeholder="Escribe tu correo" required>
+                <input type="email" name="correo" placeholder="Escribe tu correo" required> <!--No se usa pq debe hacerce en Back Js -->
                 </label><br><br>
 
                 <label>Telefono:
-                <input type="number" name="telefono" placeholder="Escribe tu telefono" min="10" max="15" required>
+                <input type="number" name="telefono" placeholder="Escribe tu telefono" min="9" max="15" >
                 </label><br><br>
 
                 <label>Correo de Negocios:
@@ -122,7 +122,7 @@
                 </label><br><br>
 
                 <label>Agendar cita:
-                <input type="date" name="cita">
+                <input type="date" min= "2025-01-01"  name="cita"> <!-- cuando lo muestra empieza en el max si no tiene hoy--> 
                 </label><br><br>
 
                 <label>Biografía:
@@ -133,7 +133,22 @@
                 <input type="checkbox" name="equipo" value="si"> Si:
                 <input type="checkbox" name="equipo" value="SI"> SI:
                 </label><br><br>
-               
+
+                <label>Genero:
+                <input type="radio" name="genero" value="masculino" checked> Masculino <!-- checked: seleccion por defecto-->
+                <input type="radio" name="genero" value="femenino"> Femenino
+                <input type="radio" name="genero" value="otro"> Otro        
+
+                
+                <label> Que tan bueno eres jugando al futbol ?:
+                <input type="range" name="rango" min="0" max="10" step="1" value="5"> <!-- step: incremento, value: valor por defecto-->
+                </label><br><br>    
+
+
+                <label>Color Camiseta
+                <input type="color" name="color" value="#ff0000"> <!-- value: color por defecto-->
+                </label>
+
 
                 <input type="submit" value="actualizar"> <!--Boton envio del formulario y actualiza la pagina-->
             </form>

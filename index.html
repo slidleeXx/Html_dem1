@@ -5,67 +5,115 @@
     <meta charset="UFT-8" >  <!-- Insercion de Character UNICODE SIMBOLOS-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Control vista dispositivos moviles-->
     <title>Ej Pract Perfil Usuario HTTML 5 </title>
-  
+    
+    <link rel="stylesheet" href="css/style.css"> <!--Vinculacion de CSS externo-->
+    <script src="js/scripts.js" defer></script> <!--Vinculacion de JS externo, defer: carga despues del html-->
+    
 </head>
+
+
 
 <body>
 
-    <header> <h1> Perfil de Usuario </h1>
+    <header> 
+        <!-- Cabecera de la pagina (logos,search,menu,about,contac,etc)-->
+        <img src="img/Logo.png" alt="Logo de la pagina"> <!-- alt: texto alternativo si no carga la imagen-->
+
+        <nav> <!--Agrupa-->
+            <!-- Menu de navegacion -->
+            <a href="index.html">Inicio</a> 
+            <a href="pages/galeria.html">Galeria</a>
+            <a href="pages/contacto.html">Contacto</a>
+        </nav>
+
+        <form>
+            <input type="search" name="buscador" placeholder="Buscar en la pagina"> <!-- type search: barra de busqueda-->
+            <input type="submit" value="Buscar"> <!-- value: texto del boton-->
+        </form>
+
     </header>
 
+
+
+        <!-- Cuerpo de la pagina-->
     <main>
-    
+            <!--Inicio del Hero (es lo primero que se muestra)-->
             <section>
-                <article>
-                <h2>Bibliografia</h2>
-                <p> Lionel Andrés Messi Cuccittini (Rosario, 24 de junio de 1987), conocido como Leo Messi, futbolista argentino que juega como delantero o centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS canadoestadounidense. Es también internacional con la selección de Argentina, de la que es capitán.El 10 de Argentina gano todos los posibles premios que un futbolista puede conseguir y considerado el mejor jugador de todos los tiempos. </p>
-                </article><br>
-    
-
-                
-                <h2>Foto de Perfil </h2> <br>
+                <h1 id="NameLionel">Im Lionel Andres Messi </h1>
+                <h2> El mejor jugador de todos los tiempos </h2>
+                <p class="HeroText"> Bienvenido al perfil de usuario de Lionel Messi, aqui podras encontrar toda la informacion relevante sobre su carrera, logros y datos de contacto. </p>
+                <!--Imagen de fondo (ccs) / imagen normal(img et)-->
                 <img src="img\Messsi.png" alt="Imagen de perfil:THE GOAT">
-                <br>
 
-                <h2>Video de Presentacion</h2>
-                <br>
-                <video width="320" height="240" controls autoplay muted> <!--Controles de video, autoplay: inicia automaticamente, muted: sin sonido-->
-                <source src="video/Messsi.mp4" type="video/mp4">
-                El navegador no soporta el elemento de video.
-                </video>
+                <!--Iconos -> social media-->
 
-                <h2>Logros y Titulos</h2><br> 
-                <h3> Titulos alcanzados por Lionel Andres Messi</h3>
-                        <ul>
-                            <li> 10 Ligas de España</li>
-                            <li> 7 Copas del Rey</li>
-                            <li> 8 Supercopas de España</li>
-                            <li> 4 Champions League</li>
-                            <li> 3 Supercopas de Europa</li>
-                            <li> 3 Mundiales de Clubes</li>
-                            <li> 1 Copa América</li>
-                            <li> 1 Finalissima</li>
-                            <li> 1 Copa Mundial de la FIFA</li>
-                        </ul>
 
-                <h3>Todos los Titulos individuales </h3>
-                    <ol>
-                        <li> 8 Balones de Oro</li>
-                        <li> 6 Botas de Oro</li>
-                        <li> 6 premios al Mejor Jugador de la Liga</li>
-                        <li> 8 premios al Mejor Jugador del FC Barcelona</li>
-                        <li> 2 premios al Mejor Jugador del Mundial de Clubes</li>
-                        <li> 1 premio al Mejor Jugador de la Copa América</li>
-                        <li> 1 premio al Mejor Jugador de la Finalissima</li>
-                        <li> 1 premio al Mejor Jugador del Mundial de Fútbol</li>
-                    </ol>    
+            </section>
+            <!--Fin del Hero-->
+
+            <!--Inicio del Contenido Principal-->
+            <section>
+
+                <h2 class="subtitulos">Bibliografia About me</h2>
+
+                <article>
+                <hr> <!-- linea horizontal--> 
+                <p> Lionel Andrés Messi Cuccittini (Rosario, 24 de junio de 1987), conocido como Leo Messi, futbolista argentino que juega como delantero o centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS canadoestadounidense. Es también internacional con la selección de Argentina, de la que es capitán.El 10 de Argentina gano todos los posibles premios que un futbolista puede conseguir y considerado el mejor jugador de todos los tiempos. </p>
+                </article>
+           
+
+                <h2 class="subtitulos">Logros y Titulos</h2><br> 
+                <section> 
+                        <h3> Titulos alcanzados por Lionel Andres Messi</h3>
+                            <ul>
+                                <li> 10 Ligas de España</li>
+                                <li> 7 Copas del Rey</li>
+                                <li> 8 Supercopas de España</li>
+                                <li> 4 Champions League</li>
+                                <li> 3 Supercopas de Europa</li>
+                                <li> 3 Mundiales de Clubes</li>
+                                <li> 1 Copa América</li>
+                                <li> 1 Finalissima</li>
+                                <li> 1 Copa Mundial de la FIFA</li>
+                            </ul>
+
+                </section>
+                
+                <section>
+                        <h3> Titulos individuales </h3>
+                        <ol>
+                            <li> 8 Balones de Oro</li>
+                            <li> 6 Botas de Oro</li>
+                            <li> 6 premios al Mejor Jugador de la Liga</li>
+                            <li> 8 premios al Mejor Jugador del FC Barcelona</li>
+                            <li> 2 premios al Mejor Jugador del Mundial de Clubes</li>
+                            <li> 1 premio al Mejor Jugador de la Copa América</li>
+                            <li> 1 premio al Mejor Jugador de la Finalissima</li>
+                            <li> 1 premio al Mejor Jugador del Mundial de Fútbol</li>
+                        </ol> 
+                </section>
+
+
+                <h2 class="subtitulos centradoTxt">Video Skills</h2>
+
+                <section>
+                    <video width="320" height="240" controls autoplay muted> <!--Controles de video, autoplay: inicia automaticamente, muted: sin sonido-->
+                    <source src="video/Messsi.mp4" type="video/mp4">
+                    El navegador no soporta el elemento de video.
+                    </video>
+
+                </section>
+                
+                   
 
             </section>
           
        
 
         <SECTION>
-     
+            <h2 class="subtitulos">Informacion de Contacto</h2>
+            <p> Si deseas ponerte en contacto con Lionel Messi, puedes utilizar la siguiente informacion de contacto:</p>
+
              <table>
                 <caption> Informacion de Contacto </caption>
                 <thead>
@@ -89,24 +137,28 @@
                     <td>BusinesEmail</td>
                     <td>messichambeador@gmail.com</td>
                 </tr>
-                  <tr>
+                <tr>
                     <td>Obra Social</td>
                     <td>*</td>
                 </tr>
                 </tbody>
-                <tfoot> 
-                    * significa que Lionel no tiene asociada informacion 
-                </tfoot>
+
+               <tfoot>
+                <tr>
+                    <td colspan="2"> *no se tiene informacion asociada</td> <!-- colspan: ocupa 2 columnas-->
+                </tr>
+                </tfoot>    
+
             </table>
 
         </SECTION>
 
 
         <section>
-            <h2>Actualizar Perfil</h2>
+            <h2 class="subtitulos">Actualizar Perfil</h2>
             <form>
                 <label>Nombre:
-                <input type="text" name="nombre" placeholder="Escribe tu nombre" max length="30" minlength="5" required> <!-- max length: maximo caracteres, required: campo obligatorio-->
+                <input type="text" name="nombre" placeholder="Escribe tu nombre" max length="30" minlength="5" required> <!-- place horlder: txt adentro de imput, max length: maximo caracteres, required: campo obligatorio-->
                 </label><br><br>
 
                 <label>Correo electrónico:
@@ -164,7 +216,7 @@
 
 
         <section>
-            <h2>Enlaces de Interes</h2>
+            <h2 class="subtitulos">Enlaces de Interes</h2>
             <p> Visita la pagina oficial de Lionel Messi <a href="https://www.leomessi.com/" target="_blank" title="Pagina Oficial de Lionel Messi">Aqui</a> </p> <!-- target: donde se abre _blank nueva pestaña, _self misma pestaña, title: informacion al pasar el mouse-->
             <p> Visita la pagina de Wikipedia de Lionel Messi <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank" title="Pagina Wikipedia de Lionel Messi">Aqui</a> </p>
         </section>

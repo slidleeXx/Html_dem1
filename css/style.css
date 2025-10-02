@@ -1,0 +1,46 @@
+
+* {
+ Margin:0;
+ padding:0;
+} /* margen defecto entre pagina y ventana todos elm sin marg -> obliga*/
+
+
+
+ p {
+    color:goldenrod;
+    font: size 16px;/* tamano de letra*/
+      font-family: Arial, Helvetica, serif; /*tipo de letra*/
+    letter-spacing: 2px; /*espacio entre letras*/
+    text-align:justify; /*justificado*/
+ }
+
+ .HeroText {
+    color:magenta;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; 
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px; /*espacio arriba*/
+    margin-bottom: 20px; /*espacio abajo*/
+ }
+
+ #NameLionel {
+    color:gold;
+    font-size: 30px;
+    font-style: italic; 
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+ }
+
+ .subtitulos {
+   color:white; 
+    text-shadow: 2px 2px  red;
+ }
+
+ .centradoTxt {
+    text-align: center;
+ }
+ 
+

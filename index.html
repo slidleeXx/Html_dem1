@@ -8,6 +8,9 @@
     
     <link rel="stylesheet" href="css/style.css"> <!--Vinculacion de CSS externo-->
     <script src="js/scripts.js" defer></script> <!--Vinculacion de JS externo, defer: carga despues del html-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!--Iconos Bootstrap etiqueta i-->
+    
     
 </head>
 
@@ -15,15 +18,20 @@
 
 <body>
 
-    <header> 
+    <header > 
         <!-- Cabecera de la pagina (logos,search,menu,about,contac,etc)-->
-        <img src="img/Logo.png" alt="Logo de la pagina"> <!-- alt: texto alternativo si no carga la imagen-->
 
-        <nav> <!--Agrupa-->
+        <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> <!-- alt: texto alternativo si no carga la imagen--> 
+
+        <p class="centradoTxt">Welcome , Im Hero</p>
+
+        <nav> <!--Contenedor Agrupa-->
             <!-- Menu de navegacion -->
             <a href="index.html">Inicio</a> 
-            <a href="pages/galeria.html">Galeria</a>
-            <a href="pages/contacto.html">Contacto</a>
+            <a href="">About me</a>
+            <a href="">Logros/Titulos</a>
+            <a href="">Contact</a>
+            <a href="">Links Interes</a>
         </nav>
 
         <form>
@@ -38,49 +46,62 @@
         <!-- Cuerpo de la pagina-->
     <main>
             <!--Inicio del Hero (es lo primero que se muestra)-->
-            <section>
-                <h1 id="NameLionel">Im Lionel Andres Messi </h1>
-                <h2> El mejor jugador de todos los tiempos </h2>
+            <section class="hero">
                 <p class="HeroText"> Bienvenido al perfil de usuario de Lionel Messi, aqui podras encontrar toda la informacion relevante sobre su carrera, logros y datos de contacto. </p>
+
+                <h1 id="NameLionel">Hello my friends , <br> Im Lionel Andres Messi <h1>
+
                 <!--Imagen de fondo (ccs) / imagen normal(img et)-->
-                <img src="img\Messsi.png" alt="Imagen de perfil:THE GOAT">
+                <img class="border" src="img\Messsi.png" alt="Imagen de perfil:THE GOAT">
 
                 <!--Iconos -> social media-->
+                <i class=" bi bi-instagram fontImageStyle"></i>
+                <i class=" bi bi-facebook fontImageStyle"></i>
+                <i class=" bi bi-twitter fontImageStyle"></i>
+                
+                <p class="Titulo sangria"> The GOAT the <em>best world</em> football player. "Prefiero que me recuerden como una buena Persona"</p>
 
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                  
 
+ 
             </section>
             <!--Fin del Hero-->
 
-            <!--Inicio del Contenido Principal-->
-            <section>
+            <!--Inicio del Contenido acerca de lio-->
+            <section class="about">
 
-                <h2 class="subtitulos">Bibliografia About me</h2>
+                <h2 class="subtitulos"> About me</h2>
 
                 <article>
                 <hr> <!-- linea horizontal--> 
-                <p> Lionel Andrés Messi Cuccittini (Rosario, 24 de junio de 1987), conocido como Leo Messi, futbolista argentino que juega como delantero o centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS canadoestadounidense. Es también internacional con la selección de Argentina, de la que es capitán.El 10 de Argentina gano todos los posibles premios que un futbolista puede conseguir y considerado el mejor jugador de todos los tiempos. </p>
+                <p class="background1"> Lionel Andrés Messi Cuccittini (Rosario, 24 de junio de 1987), conocido como Leo Messi, futbolista argentino que juega como delantero o centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS canadoestadounidense. Es también internacional con la selección de Argentina, de la que es capitán.El 10 de Argentina gano todos los posibles premios que un futbolista puede conseguir y considerado el mejor jugador de todos los tiempos. </p>
                 </article>
+
+            </section>
            
 
-                <h2 class="subtitulos">Logros y Titulos</h2><br> 
-                <section> 
-                        <h3> Titulos alcanzados por Lionel Andres Messi</h3>
-                            <ul>
-                                <li> 10 Ligas de España</li>
-                                <li> 7 Copas del Rey</li>
-                                <li> 8 Supercopas de España</li>
-                                <li> 4 Champions League</li>
-                                <li> 3 Supercopas de Europa</li>
-                                <li> 3 Mundiales de Clubes</li>
-                                <li> 1 Copa América</li>
-                                <li> 1 Finalissima</li>
-                                <li> 1 Copa Mundial de la FIFA</li>
-                            </ul>
+            <section class="logrosTitulos"> 
+                    <h2 class="subtitulos">Logros y Titulos</h2>
 
-                </section>
+                    <h3 class="subtitulos2"> Titulos alcanzados</h3>
+                        <ul>
+                            <li> 10 Ligas de España</li>
+                            <li> 7 Copas del Rey</li>
+                            <li> 8 Supercopas de España</li>
+                            <li> 4 Champions League</li>
+                            <li> 3 Supercopas de Europa</li>
+                            <li> 3 Mundiales de Clubes</li>
+                            <li> 1 Copa América</li>
+                            <li> 1 Finalissima</li>
+                            <li> 1 Copa Mundial de la FIFA</li>
+                        </ul>
+
                 
-                <section>
-                        <h3> Titulos individuales </h3>
+            
+                        <h3 class="subtitulos2"> Titulos individuales </h3>
                         <ol>
                             <li> 8 Balones de Oro</li>
                             <li> 6 Botas de Oro</li>
@@ -91,26 +112,53 @@
                             <li> 1 premio al Mejor Jugador de la Finalissima</li>
                             <li> 1 premio al Mejor Jugador del Mundial de Fútbol</li>
                         </ol> 
-                </section>
+            </section>
 
+          
+        <section class="skills">
 
-                <h2 class="subtitulos centradoTxt">Video Skills</h2>
+            <h2 class="subtitulos">Skills-Caracteristicas Tecnicas</h2>
+           
+            <div class="cuadros">
+                <img class="images" src="img/Logo.svg" alt="Logo de la pagina">
+                <p> Gambeta:1000</p>
+            </div>
 
-                <section>
-                    <video width="320" height="240" controls autoplay muted> <!--Controles de video, autoplay: inicia automaticamente, muted: sin sonido-->
-                    <source src="video/Messsi.mp4" type="video/mp4">
-                    El navegador no soporta el elemento de video.
-                    </video>
+            <div class="cuadros">
+                <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                <p> Velocidad:100</p>
+            </div>
 
-                </section>
-                
-                   
+            <div class="cuadros">
+                <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                <p> Tiros:100</p>
+            </div>
+
+            <div class="cuadros">
+                <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                <p> Vision:1003</p>
+            </div>
+
+            <div class="cuadros">
+                <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                <p> Creacion Juego:10000</p>
+            </div>
+
+        
+            <h3 class="subtitulos2">Video A modo de Ejemplo</h3>
+            <p> Mira este video de las mejores jugadas de Lionel Messi a lo largo de su carrera:</p>
+            <section >
+                <video class= "border" width="320" height="240" controls autoplay muted> <!--Controles de video, autoplay: inicia automaticamente, muted: sin sonido-->
+                <source src="video/Messsi.mp4" type="video/mp4">
+                El navegador no soporta el elemento de video.
+                </video>
 
             </section>
-          
+        </section>
+
        
 
-        <SECTION>
+        <SECTION class ="contact">
             <h2 class="subtitulos">Informacion de Contacto</h2>
             <p> Si deseas ponerte en contacto con Lionel Messi, puedes utilizar la siguiente informacion de contacto:</p>
 
@@ -154,7 +202,7 @@
         </SECTION>
 
 
-        <section>
+        <section class="actualizar">
             <h2 class="subtitulos">Actualizar Perfil</h2>
             <form>
                 <label>Nombre:
@@ -215,13 +263,13 @@
         </section>        
 
 
-        <section>
+        <section class="enlaces">
             <h2 class="subtitulos">Enlaces de Interes</h2>
             <p> Visita la pagina oficial de Lionel Messi <a href="https://www.leomessi.com/" target="_blank" title="Pagina Oficial de Lionel Messi">Aqui</a> </p> <!-- target: donde se abre _blank nueva pestaña, _self misma pestaña, title: informacion al pasar el mouse-->
             <p> Visita la pagina de Wikipedia de Lionel Messi <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank" title="Pagina Wikipedia de Lionel Messi">Aqui</a> </p>
         </section>
 
-        <section> 
+        <section class="canvas"> 
             <!-- area de graficos - animaciones -->
             <h2>Canvas HTML5 Pone tu firma</h2>
             <canvas

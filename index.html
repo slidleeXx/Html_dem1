@@ -20,10 +20,9 @@
 
     <header > 
         <!-- Cabecera de la pagina (logos,search,menu,about,contac,etc)-->
-
+        <div>
         <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> <!-- alt: texto alternativo si no carga la imagen--> 
-
-        <p class="centradoTxt">Welcome , Im Hero</p>
+        </div>
 
         <nav> <!--Contenedor Agrupa-->
             <!-- Menu de navegacion -->
@@ -46,6 +45,8 @@
         <!-- Cuerpo de la pagina-->
     <main>
             <!--Inicio del Hero (es lo primero que se muestra)-->
+            <p class="centradoTxt">Welcome , Im Hero</p>
+
             <section class="hero">
                 <p class="HeroText"> Bienvenido al perfil de usuario de Lionel Messi, aqui podras encontrar toda la informacion relevante sobre su carrera, logros y datos de contacto. </p>
 
@@ -114,49 +115,80 @@
                         </ol> 
             </section>
 
-          
+        <!--Inicio de Skills-->
+        
         <section class="skills">
 
-            <h2 class="subtitulos">Skills-Caracteristicas Tecnicas</h2>
-           
-            <div class="cuadros">
-                <img class="images" src="img/Logo.svg" alt="Logo de la pagina">
-                <p> Gambeta:1000</p>
-            </div>
-
-            <div class="cuadros">
-                <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
-                <p> Velocidad:100</p>
-            </div>
-
-            <div class="cuadros">
-                <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
-                <p> Tiros:100</p>
-            </div>
-
-            <div class="cuadros">
-                <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
-                <p> Vision:1003</p>
-            </div>
-
-            <div class="cuadros">
-                <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
-                <p> Creacion Juego:10000</p>
-            </div>
-
-        
-            <h3 class="subtitulos2">Video A modo de Ejemplo</h3>
-            <p> Mira este video de las mejores jugadas de Lionel Messi a lo largo de su carrera:</p>
-            <section >
-                <video class= "border" width="320" height="240" controls autoplay muted> <!--Controles de video, autoplay: inicia automaticamente, muted: sin sonido-->
-                <source src="video/Messsi.mp4" type="video/mp4">
-                El navegador no soporta el elemento de video.
-                </video>
-
+            <section class="SectionSubtitulos">
+                 <h2 class="subtitulos ">Skills-Caracteristicas Tecnicas</h2>
             </section>
+
+            <section class="ContenedorPadre">
+                 <div class="cuadros">
+                    <img class="images" src="img/Logo.svg" alt="Logo de la pagina">
+                    <p> Gambeta:1000</p>
+
+                </div>
+
+                <div class="cuadros">
+                    <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                    <p> Velocidad:100</p>
+                </div>
+
+                <div class="cuadros">
+                    <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                    <p> Tiros:100</p>
+                </div>
+
+                <div class="cuadros">
+                    <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                    <p> Vision:1003</p>
+                </div>
+
+                <div class="cuadros">
+                    <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                    <p> Creacion Juego:10000</p>
+                </div>
+            </section>
+               
+             
+
         </section>
 
        
+          <section class="video ContenedorGaleria">
+
+            <h2 class="subtitulos centradoTxt">Video SKILLS</h2>
+
+            <section class="ContenedorPadre2">
+
+                    <div>
+                        <video class= "border" width="80" height="80" controls autoplay muted> <!--Controles de video, autoplay: inicia automaticamente, muted: sin sonido--> 
+                        <source src="video/Messsi.mp4" type="video/mp4">
+                        El navegador no soporta el elemento de video.
+                        </video>
+
+                        <p> Ankara Messi</p>
+                        </div>
+
+                    <div>
+                        <video class= "border" width="80" height="80" controls autoplay muted> 
+                        <source src="video/Messsi.mp4" type="video/mp4">
+                        El navegador no soporta el elemento de video.
+                        </video>
+
+                        <p> Messi vs Liverpoool </p>
+                    </div>
+
+                    <div class="cuadros">
+                    <img class="images" src="img/Logo.svg" alt="Logo de la pagina"> 
+                    <p> Creacion Juego:10000</p>
+                     </div>
+
+            </section>
+
+            </section>
+
 
         <SECTION class ="contact">
             <h2 class="subtitulos">Informacion de Contacto</h2>
@@ -203,7 +235,7 @@
 
 
         <section class="actualizar">
-            <h2 class="subtitulos">Actualizar Perfil</h2>
+            <h2 class="Titulo">Actualizar Perfil</h2>
             <form>
                 <label>Nombre:
                 <input type="text" name="nombre" placeholder="Escribe tu nombre" max length="30" minlength="5" required> <!-- place horlder: txt adentro de imput, max length: maximo caracteres, required: campo obligatorio-->
@@ -279,12 +311,14 @@
                 style="border:1px solid color white;"> <!-- borde del canvas ccs inline-->
                 Tu navegador no soporta el elemento canvas de HTML5.
         </section>
+
+        <h2 class="animacion">Hola soy una animacion basica</h2>
                 
     </main>
 
     
 <footer> 
-    copyright MIT LICENCE @2025 SlidleeXx Perfil de Usuario 
+    <p class="transcicion">copyright MIT LICENCE @2025 SlidleeXx Perfil de Usuario </p>
 </footer>
 
 </body>

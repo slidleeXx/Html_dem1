@@ -7,11 +7,135 @@
    header{
          border: 4px solid grey; 
          padding: 20px 0; 
+         background-color:rgb(174, 98, 161);
+         width: 100%;
+         justify-content:space-around;
+         align-items: center;
+         display: flex;
+
+   }
+   header a{
+      margin: 0px 10px ;
    }
 
-   body {
+   body{
       background-color:rgb(157, 146, 146) ; 
+      display: flex;
+      justify-content: center; /*centra todo el contenido de la pagina*/
+      align-items: center; /*centra todo el contenido de la pagina*/
+      flex-direction: column; /*ordena todo el contenido de la pagina en columna*/
+      min-height: 100vh; /*alto minimo de la ventana */;
    }
+
+   /*transform y transcicion en footer*/
+   footer{
+      height: 50px;
+      width: 70%;
+      background-color: rgb(174, 98, 161);
+      border: 4px solid grey;
+      transform: scale(1 , 1) screw(10deg , 10deg); 
+      /*escala: x,y , 1 normal, >1 agranda, <1 reduce*/
+      /*screw: x,y , angulo de giro en grados +horario -ant*/
+
+      transition: width 0.5s ease-in-out; /*transicion suave*/
+   }
+
+
+   /*pseudo clase :hover -> cuando el mouse esta encima del elemento , mal uso cuando cambio muy brusco -> add transicion en clase original*/
+   footer:hover{        
+      width: 100%;
+      background-color: rgb(232, 238, 197);
+   }   
+
+   .transcicion{
+       transition: all 0.5s ease-in-out; /*transicion suave*/
+      /*all: todas las propiedades, 0.5s: duracion, ease-in-out: tipo de transicion*/
+   }
+
+   /*cambios al pasar el mouse por encima*/
+   .transcicion:hover{
+      color: rgb(36, 30, 103);
+      font-size: 15px;
+   }
+
+   /* animaciones */
+   .animacion{
+      width: 100px;
+      height: 100px;
+      background-color: rgb(72, 210, 127);
+      animation: mover 1.8s infinite alternate; /*nombre duracion, infinito, alterna direccion*/
+   }
+   @keyframes mover{
+      0% {
+         transform: translatey(0);
+         background-color: seagreen;
+      }
+      50% {
+         transform: translatey(60px);
+         background-color: rgb(224, 143, 45);
+      }
+      100% {
+         transform: translatey(0);
+         background-color: rgb(21, 226, 110);
+      }
+
+   }
+
+
+   div{
+         background-color: rgb(25, 180, 232);
+         height: 100px;
+         width: 100px;
+         border: solid 2px black;
+         border-radius: 10px;      
+         display: flex; /* herede a sus hijos */
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      /*Layout/diseños */
+      /*Uso de flex box contened flexible (control espacio -> todo inline en vez de blq) -> layouts , siempre se deben de usar en el padre no hereda a los hijos / solo en contenedores*/
+
+   .ContenedorPadre{
+      /* background-color: lightskyblue;
+      color : black;  */
+      border: 4px solid rgb(10, 6, 233);   
+      padding: 10px ; 
+      width: 100%; 
+      
+      display:flex; 
+      flex-direction: row; /*Como va a orden : fila defec ,columna o fila reverse*/
+
+      justify-content: space-evenly; /*Distr elm eje x: start inicio,end final ,center centro, around extrem iguales y medio dif ,betwen extr al final de eje medio iguales, evely: espacio igual todos*/
+
+      align-items:flex-start; /*Distr elm eje y*: start arriba, end abajo, center centro, stretch estira todo el alto del contenedor*/  
+   }
+
+
+   .ContenedorPadre2{
+      width: 100%; 
+     border: 4px solid rgb(103, 184, 17);   
+      padding: 10px ; 
+      display: flex; 
+      justify-content:space-evenly;
+      align-items: center;
+   }
+
+   .ContenedorGaleria{
+      width: 100%; 
+      
+   }
+
+   .SectionSubtitulos{
+      /* text-align: center; */
+      /* margin-bottom: 10px;  */
+      display: flex; 
+      align-items: center;
+      justify-self: center;
+   }
+   
+   
 
    .hero{   
       border: 4px maroon solid; 
@@ -49,8 +173,10 @@
     }
 
     .images{
-     width: 40px;
+     width: 50%;/*porcentaje del ancho de su contenedor*/
     }
+
+
 
     .fontImageStyle{
       font-size: 20px; 
@@ -59,9 +185,7 @@
     }
 
 
-
-
-
+    
 
    .HeroText {
       color:rgb(33, 32, 30);
@@ -78,6 +202,7 @@
       color:white; 
       text-shadow: 2px 2px  red;
    }
+
    .subtitulos2 {
       color:yellow; 
       text-shadow: 2px 2px black;
@@ -90,15 +215,17 @@
    .Titulo{
       color:rgb(53, 52, 45);
       font-size: 20px;
-      font-family: 'Times New Roman', Times, serif; 
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
       letter-spacing: 2px;
       text-align: justify;
       margin-top: 20px;
       margin-bottom: 20px; 
    }
+
   .sangria{
       text-indent: 30px; /*sangria*/
    }
+
 /*Tipos de colores : nombre,rgb,rgba,hsl,exadecimal,selecc*/
    p {
       color:goldenrod; 

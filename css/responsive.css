@@ -67,7 +67,24 @@
     .listaHeader{
         display: block; /*muestra la lista del header en pantallas pequeñas*/
         /*block hace que el elemento ocupe todo el ancho disponible*/
+        
     }
-
-
 }
+
+
+    /*lo que deberia ir en un responsive css ejemplos*/
+
+    /*pantallas estandar */
+
+    @media (max-width: 320px) {} /*celulares muy pequeños*/
+    @media (max-width: 480px) {} /*celulares*/
+    @media (max-width: 600px) {} /*modo retrato -> celulares en modo horizontal*/   
+    @media (max-width: 720px) {}    /*tabletas -celulares grandes modo retrato*/
+    @media (max-width: 1024px) {} /*tabletas/celulares modo retrato */ 
+    @media (max-width: 1280px) {} /*tabletas/celulares laptop pequeñas modo paisaje*/
+    @media (max-width: 1440px) {} /*pantallas escritorio / laptos / tablets*/
+    @media (max-width: 1902px) {} /*pantallas grandes escritorio/laptos 2k 4k etc*/
+
+
+
+

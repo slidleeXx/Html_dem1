@@ -21,7 +21,7 @@
          padding: 20px 0; 
          background-color: var(--main-color);
          width: 100%;
-         height: 100px;
+         height: 10vh; /*alto 10% de la ventana*/
          display: flex;
          justify-content:space-around; 
          align-items: center;
@@ -119,7 +119,7 @@
       width: 100%; 
       
       display:flex; 
-      flex-direction: row; /*Como va a orden : fila defec ,columna o fila reverse*/
+      flex-direction: row; /*Como va a ordenar : fila defec ,columna o fila reverse*/
 
       justify-content: space-evenly; /*Distr elm eje x: start inicio,end final ,center centro, around extrem iguales y medio dif ,betwen extr al final de eje medio iguales, evely: espacio igual todos*/
 
@@ -165,17 +165,18 @@
       border: 51px maroon solid; 
       justify-content: center;
       align-items: center;
-
+      /*height: 70vh; 75% del alto de la ventana se vea que hay + contenido*/
     }
 
+    /*uso de botones dos tipos etiqueta a y button */ 
     .button{
-      border-radius: 2px;
-      border:3px rgb(255, 255, 255) solid;
+      border-radius: 5px;
+      /* border:3px rgb(255, 255, 255) solid; */
       background-color: black;
       color: rgb(222, 185, 17);
       margin: 5px;
-      padding: 2px 5px;
-      text-decoration: dashed rgb(255, 255, 255) 2px;
+      padding: 10px 20px;
+
       font-size: 16px;
       transition: all 0.5s ease-in-out; /*transicion suave*/
 
@@ -185,18 +186,48 @@
       background-color:  rgb(222, 185, 17);
       color: black;
     }
+      /* boton tipo button */
+    button{
+      border-radius: 5px;
+      /* border:3px rgb(255, 255, 255) solid; */
+      border: none;
+
+      background-color: black;
+      color: rgb(222, 185, 17);
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      transition: all 0.5s ease-in-out; /*transicion suave*/
+
+    }
+
+    button:hover{
+      background-color:  rgb(222, 185, 17);
+      color: black;
+      cursor: pointer; /*cambia el cursor a mano*/
+    }
     
    
+
+
     .about{
       border:4px maroon solid;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      
     }
+
+    /*uso de background image*/
 
     .logrosTitulos{
       border:4px maroon solid;
+      background: url("https://placehold.co/1200x500") no-repeat center center/cover;
+      /*background-image:  url('http://via.placeholder.com/1200x1200');
+      background-repeat: no-repeat; no repite la imagen cuando no cubre el tamaño del contenedor
+      background-size: cover; cubre todo el contenedor
+      background-position: center center;  centra la imagen y y x */
+
     }
 
     .contact{
@@ -220,11 +251,16 @@
     }
 
     .video{
-      border:4px maroon solid;
+     flex-basis: 30% ; /* de su padre */
+
+      /* flex-grow: 1 ; ocupa todo el espacio disponible */
+
     }
 
+
+
     .images{
-     width: 50%;/*porcentaje del ancho de su contenedor*/
+     width: 25%;/*porcentaje del ancho de su contenedor*/
      margin:0 0 10px 0; /*espacio alrededor de la imagen*/
     }
 

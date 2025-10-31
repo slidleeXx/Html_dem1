@@ -331,6 +331,16 @@
     margin-bottom: 20px; 
  }
 
+ /* Estilos para pantallas pequeñas */
+ /* nav de header cambia a una lista vertical */
+
+  .listaHeader{
+   
+   color:rgb(174, 98, 161);
+   display: none; /*oculta la lista (icono)  del header en pantallas grandes*/
+
+}
+
  
 
 

@@ -1,0 +1,73 @@
+
+/* Responsive CSS File solo deben ir las clases media para responsive*/
+
+/* header{
+    background-color:#da9d41;
+} */
+
+/* Estilos para pantallas grandes */
+/*hasta X px de ancho aplica esa propiedad + pixeles toma el de arriba*/
+@media (max-width: 743px){
+    header{
+        background-color: lightblue;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+    .video{
+        width: 100%;
+    }
+    .images{
+        width: 100%;
+    }
+    
+}
+
+/*Intervalo de 744px a 991px*/
+@media (min-width: 744px) and (max-width: 991px){
+    header{
+        background-color: lightgreen;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .video{
+        width: 80%;
+    }
+
+    .images{
+        width: 80%;
+    }
+}
+
+/* modificamos la barra de navegacion cuando tengamos pantallas pequeñ*/
+@media (max-width: 744px) {
+
+    header nav a{
+
+        font-size: 20px;
+        color: rgb(26, 26, 69);
+        display: none; /*oculta los enlaces del nav en pantallas pequeñas*/
+        
+    }
+
+    header nav {
+        /* display: none;  -> debe ser solo para las demas*/
+        /*oculta la barra de navegacion en pantallas pequeñas pero deberia mostrar solo el icono de lista*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+    .listaHeader{
+        display: block; /*muestra la lista del header en pantallas pequeñas*/
+        /*block hace que el elemento ocupe todo el ancho disponible*/
+    }
+
+
+}
